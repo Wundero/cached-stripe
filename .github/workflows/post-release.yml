@@ -10,24 +10,21 @@ jobs:
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           comment-template: |
-              :tada: This is included in version {release_link} :tada:
+            :tada: This is included in version {release_link} :tada:
 
-              The release is available on:
+            The release is available on:
 
-              * [GitHub releases](https://github.com//cached-stripe/releases/tag/{release_tag})
-              * [npm package (@latest dist-tag)](https://www.npmjs.com/package/cached-stripe/v/${{ env.npm_version }})
+            * [GitHub releases](https://github.com//cached-stripe/releases/tag/{release_tag})
+            * [npm package (@latest dist-tag)](https://www.npmjs.com/package/cached-stripe/v/${{ env.npm_version }})
 
-              Cheers! 📦🚀
-
+            Cheers! 📦🚀
 
 name: Post Release
-
 
 on:
   release:
     types:
       - published
-
 
 permissions:
   issues: write
