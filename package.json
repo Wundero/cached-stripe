@@ -4,7 +4,7 @@
 	"description": "Wrapper for the stripe server sdk which caches results to minimize stripe api calling",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com//cached-stripe.git"
+		"url": "git+https://github.com/Wundero/cached-stripe.git"
 	},
 	"license": "MIT",
 	"author": {
